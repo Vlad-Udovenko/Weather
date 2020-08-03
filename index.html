@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+	<title>Прогноз погоди 4 дні</title>
+</head>
+
+<body id="B">
+	<div id="p_prldr">
+		<div class="contpre"><span class="svg_anm"></span></div>
+	</div>
+
+	<div class="left">
+		<div id="pole">
+			<h2>Введіть назву міста</h2>
+			<div class="inputBlock">
+				<input type="text" value="" id="city" placeholder="Введіть назву міста ..." />
+				<button id="cityB" onclick="showDateTime();">OK</button>
+			</div>
+		</div>
+
+
+		<div class="text-center res"><span
+				id="OUT1">Ви обрали: </span><span id="selected"></span><br><em><span id="selected2"></span><span
+					id="adress"></span></em><br><span id="OUT11">Прогноз на 4 дні</span><br><span id="cityC"></span>
+		</div>
+		<div id="tablo">
+			<div class="day">
+				<img src="" id="tmp24" /><br>
+				<p id="day21">В даний час</p>
+				<div id="demo27"></div>
+				<div id="demo125"></div>
+				<div id="demo26"></div>
+				<div id="demo24"></div>
+			</div>
+			<div class="day">
+				<img id="tmp4" /><br>
+				<div id="demo71"></div>
+				<p id="day1"></p>
+				<div id="demo7"></div>
+				<div id="demo5"></div>
+				<div id="demo6"></div>
+				<div id="demo4"></div>
+			</div>
+
+			<div class="day">
+				<img id="tmp5" /><br>
+				<div id="demo72"></div>
+				<p id="day2"></p>
+				<div id="demo10"></div>
+				<div id="demo11"></div>
+				<div id="demo8"></div>
+				<div id="demo9"></div>
+			</div>
+
+			<div class="day">
+				<img id="tmp6" /><br>
+				<div id="demo73"></div>
+				<p id="day3"></p>
+				<div id="demo14"></div>
+				<div id="demo15"></div>
+				<div id="demo12"></div>
+				<div id="demo13"></div>
+			</div>
+
+			<div class="day">
+				<img id="tmp7" /><br>
+				<div id="demo74"></div>
+				<p id="day4"></p>
+				<div id="demo18"></div>
+				<div id="demo19"></div>
+				<div id="demo16"></div>
+				<div id="demo17"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="script/index.js"></script>
+</body>
+
+</html>
